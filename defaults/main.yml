@@ -1,0 +1,9 @@
+do_mount_filesystems: true
+do_software_upgrade: true
+do_nfcDevice: false
+do_git: true
+do_kernel_modules: true
+do_get_git_repositories: true
+no_hostfile: false
+graphic_env: false
+build_full_hostsfile: false
