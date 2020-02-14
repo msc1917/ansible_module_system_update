@@ -1,12 +1,4 @@
 ---
-- name: Register Keys
-  apt_key:
-    url: "{{ item }}"
-    state: present
-  with_items:
-    - https://ftp-master.debian.org/keys/archive-key-10-security.asc
-    - https://ftp-master.debian.org/keys/archive-key-10.asc
-
 - name: Upgrade Packages
   apt:
     upgrade: yes
