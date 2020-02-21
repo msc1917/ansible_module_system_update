@@ -1,0 +1,6 @@
+---
+- name: Upgrade Packages
+  apt:
+    upgrade: yes
+    update_cache: yes
+  when: do_software_upgrade

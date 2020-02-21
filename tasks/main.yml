@@ -1,0 +1,7 @@
+---
+- name: Upgrade Software
+  include_tasks: update_debian_buster.yml
+  when: 
+    - do_software_upgrade
+    - ansible_distribution == "Debian"
+    - ansible_distribution_release == "buster"
